@@ -24,8 +24,10 @@
     scroll-padding-bottom: 20rem;
 
 }
+/*hi*/
 .ProjectWindowWrapper {
   overflow-y: auto;
+  
 }
 
 /* Firefox only (browsers without ::-webkit-scrollbar support) */
