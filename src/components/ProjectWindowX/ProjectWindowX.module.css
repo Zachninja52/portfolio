@@ -1,0 +1,36 @@
+.ProjectWindowX
+{
+    width:3em;
+    height: 3em;
+  /* Translucent gradient background */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+  /* Frosted glass blur */
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  /* Squircle-like smooth rounding or SVG clip path */
+    border-radius: 24px;
+  /* Glass edge highlight */
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 1;
+    transition: scale 0.2s ease, border 0.2s ease, box-shadow 0.2s ease;
+    margin: 1em;
+ 
+}
+.ProjectWindowX:hover
+{
+    scale: 1.1;
+    border: 5px solid rgba(0, 191, 255, 0.3);
+    box-shadow: 0px 0px 4px 4px rgba(0, 191, 255, 0.1);
+    transition: scale 0.2s ease, border 0.2s ease, box-shadow 0.2s ease;
+}
+.ProjectWindowX:active
+{
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 4px 4px rgba(0, 191, 255, 0.1);
+    scale: 1;
+    transition: scale 0.2s ease, border 0.2s ease, box-shadow 0.2s ease;
+}

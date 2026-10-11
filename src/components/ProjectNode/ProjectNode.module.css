@@ -1,0 +1,151 @@
+
+.ProjectNode
+{
+  position: relative; /* Gives the tooltip an anchor point to align to */
+  display: inline-block;
+  cursor: pointer;
+  margin-top: .4rem;
+}
+
+.ToolTip
+{
+  position: absolute;
+  bottom: 105%; /* Positions it directly above the icon */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the tooltip horizontally */
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+
+  min-width: 3rem;
+    height: 2rem;
+  /* Translucent gradient background */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  /* Frosted glass blur */
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  /* Squircle-like smooth rounding or SVG clip path */
+    border-radius: 48px;
+  /* Glass edge highlight */
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+}
+
+.ProjectNode:hover .ToolTip
+{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.ProjectNodeBorder {
+  width: 250px;
+  height: 250px;
+  /* Translucent gradient background */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+  /* Frosted glass blur */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  /* Squircle-like smooth rounding or SVG clip path */
+  border-radius: 48px;
+  /* Glass edge highlight */
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scale: 1;
+  transition: scale 0.2s ease, border 0.2s ease, box-shadow 0.2s ease;
+  
+}
+.ProjectNodeImage
+{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  /* Translucent gradient background */
+  /*background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) ); */
+  /* Frosted glass blur */
+ /* backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0px); 
+  /* Squircle-like smooth rounding or SVG clip path 
+ 
+  /* Glass edge highlight */
+  border-radius: 32px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  /*box-shadow: 0px 0px 32px 32px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.ProjectNodeBorder:hover
+{
+  width: 250px;
+  height: 250px;
+
+  transition: scale 0.2s ease, border 0.2s ease;
+
+  scale: 1.03;
+  object-fit: cover;
+  /* Translucent gradient background */
+  /*background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) ); */
+  /* Frosted glass blur */
+ /* backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0px); 
+  /* Squircle-like smooth rounding or SVG clip path 
+ 
+  /* Glass edge highlight */
+  border-radius: 48px;
+  border: 5px solid rgba(0, 191, 255, 0.3);
+  box-shadow: 0px 0px 4px 4px rgba(0, 191, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProjectNodeBorder:active
+{
+  transition: scale 0.05s ease, border 0.2s ease;
+  scale: 1;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  /*box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.3);
+  /*border: 3px solid rgba(255, 255, 255, 0.3); */
+}
+.ProjectNodeInactiveBorder
+{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.ProjectNodeInactiveBubble
+{
+  width: 30px;
+  height: 30px;
+  /* Translucent gradient background */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  /* Frosted glass blur */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  /* Squircle-like smooth rounding or SVG clip path */
+  border-radius: 10px;
+  /* Glass edge highlight */
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scale: 1;
+
+}

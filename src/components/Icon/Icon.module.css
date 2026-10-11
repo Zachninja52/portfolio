@@ -1,0 +1,71 @@
+.Icon
+{
+  position: relative; /* Gives the tooltip an anchor point to align to */
+  display: inline-block;
+  cursor: pointer;
+  margin-top: .4rem;
+
+}
+
+
+.Icon:hover .IconToolTip
+{
+  opacity: 1;
+  visibility: visible;
+}
+.IconImage
+{
+  width: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  scale: 1;
+  transition: scale 0.05s ease, border 0.2s ease;
+  filter: brightness(0) saturate(100%) invert(52%) sepia(1%) saturate(1273%) hue-rotate(147deg) brightness(91%) contrast(104%) drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+
+  
+}
+
+.IconImage:hover
+{
+  transition: scale 0.05s ease, border 0.2s ease;
+  scale:1.05
+}
+
+.IconImage:active
+{
+  transition: scale 0.05s ease, border 0.2s ease;
+  scale:1;
+  filter: brightness(0) saturate(100%) invert(52%) sepia(1%) saturate(1273%) hue-rotate(147deg) brightness(91%) contrast(104%) drop-shadow(1px 1px 3px rgba(0, 191, 255, 0.4));
+}
+
+.IconToolTip
+{
+  position: absolute;
+  bottom: 120%; /* Positions it directly above the icon */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the tooltip horizontally */
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+
+    min-width: 3rem;
+    height: 2rem;
+  /* Translucent gradient background */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  /* Frosted glass blur */
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  /* Squircle-like smooth rounding or SVG clip path */
+    border-radius: 48px;
+  /* Glass edge highlight */
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+}

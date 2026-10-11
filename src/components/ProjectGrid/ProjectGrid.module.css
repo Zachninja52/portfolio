@@ -1,0 +1,55 @@
+.ProjectGrid 
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1vw;
+  width: fit-content;
+  height: 60vh;
+  /* Translucent gradient background */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+  /* Frosted glass blur */
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0px);
+  /* Squircle-like smooth rounding or SVG clip path */
+  border-radius: 48px;
+  /* Glass edge highlight */
+  padding: 20px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+
+.ProjectGridPadder 
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.ProjectGridHeader
+{
+    width: 50rem;
+    height: 3rem;
+  /* Translucent gradient background */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+  /* Frosted glass blur */
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  /* Squircle-like smooth rounding or SVG clip path */
+    border-radius: 48px;
+  /* Glass edge highlight */
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 1;
+    transition: scale 0.2s ease, border 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 1rem;
+    margin-top: .35rem;
+    font-size: 22px;
+}
