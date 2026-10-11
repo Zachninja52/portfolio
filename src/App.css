@@ -189,12 +189,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  user-select: none;
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* Internet Explorer/Edge */
-
 }
+
+/*
+user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;    
+  -ms-user-select: none;    */
 .Intro
 {
     min-width: 20em;
