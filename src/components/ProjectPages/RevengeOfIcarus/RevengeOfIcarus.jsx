@@ -7,10 +7,10 @@ function RevengeOfIcarus({children})
 {
     return(
         <div className={styles.RevengeOfIcarus}>
-            <div>The Revenge of Icarus is the first non-competition project I made with my team, Void Coffee Studios.</div>
-
-            <div> Check it out <a href="https://voidcoffeestudios.itch.io/the-revenge-of-icarus" >here!</a>.  </div>         
+            <div>The Revenge of Icarus is the first non-competition project I made with my team, Void Coffee Studios. Check it out <a href="https://voidcoffeestudios.itch.io/the-revenge-of-icarus">here!</a></div>    
         </div>
+
+        
     )
 }
 export default RevengeOfIcarus;

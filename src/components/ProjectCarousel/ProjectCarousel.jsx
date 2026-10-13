@@ -8,10 +8,12 @@ import ProjectGridButton from '../ProjectGridButton/ProjectGridButton'
 import ProjectGridTicker from '../ProjectGridTicker/ProjectGridTicker';
 import ProjectGridTick from '../ProjectGridTick/ProjectGridTick';
 
+import { useIsOnMobile } from '../IsOnMobile/IsOnMobile';
 
 
 import IcarusIcon from '../../assets/IcarusFloat.gif';
 import YaleIcon from '../../assets/Yale.png';
+import VCSIcon from '../../assets/VCS.png';
 import DefaultIcon from '../../assets/background.jpg';
 function ProjectCarousel({children, onOpenProject}) {
 
@@ -20,6 +22,8 @@ function ProjectCarousel({children, onOpenProject}) {
     const leftButtonVisible = currentIndex > 0;
     const rightButtonVisible = currentIndex < 3 - 1;
     
+    const isOnMobile = useIsOnMobile();
+
 
     const handleLeftClick = () => 
     {
@@ -44,8 +48,8 @@ function ProjectCarousel({children, onOpenProject}) {
             <div className={styles.ProjectGridListWrapper}style={{ transform: `translateX(-${shiftPercentage}vw)`,  transition: 'transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1)',}}>
                 <div className={styles.ProjectGridList}>
                     <ProjectGrid info='About Me'>
-                        <ProjectNode imgSrcPath={YaleIcon} toolTip="My Undergrad: Yale University "onClick={() => onOpenProject('yale')}/>
-                        <ProjectNode imgSrcPath={DefaultIcon} active={false}/>
+                        <ProjectNode imgSrcPath={YaleIcon} toolTip="Prospective CS + Economics Major @ Yale University '29"onClick={() => onOpenProject('yale')}/>
+                        <ProjectNode imgSrcPath={VCSIcon} toolTip="Void Coffee Studios: My Game Design Team!" onClick={() => onOpenProject('vcs')}/>
                         <ProjectNode imgSrcPath={DefaultIcon} active={false}/>
                         <ProjectNode imgSrcPath={DefaultIcon} active={false}/>
                         <ProjectNode imgSrcPath={DefaultIcon} active={false}/>

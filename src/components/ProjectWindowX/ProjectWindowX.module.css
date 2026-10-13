@@ -34,3 +34,11 @@
     scale: 1;
     transition: scale 0.2s ease, border 0.2s ease, box-shadow 0.2s ease;
 }
+
+.ProjectWindowXWrapper
+{
+  width: 100%;
+  justify-content: right;
+  align-items: right;
+  display: flex;
+}

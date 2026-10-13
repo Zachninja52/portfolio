@@ -27,7 +27,7 @@
 /*hi*/
 .ProjectWindowWrapper {
   overflow-y: auto;
-  
+  width: 100%;
 }
 
 /* Firefox only (browsers without ::-webkit-scrollbar support) */

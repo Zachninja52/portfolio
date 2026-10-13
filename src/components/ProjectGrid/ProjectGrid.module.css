@@ -32,7 +32,7 @@
 
 .ProjectGridHeader
 {
-    width: 50rem;
+    width: 35%;
     height: 3rem;
   /* Translucent gradient background */
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
